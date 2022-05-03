@@ -17,14 +17,40 @@
 
     <div id="addImageModal" class="modal">
         <div class="modal-content">
-          <h4>where have I clicked?</h4>
-          <p>Lat: <span id='latPlaceboholder'></span></p>
-          <p>Lng: <span id='lngPlaceboholder'></span></p>
+         <div class="row">
+           <form class="col s12" id="addLocationForm">
+             <div class="row">
+
+              <div class="input-field col s4">
+                <input type="text" placeholder="Please enter locations name" id="nameField" name="name" required>
+              </div>
+
+              <div class="input-field col s4">
+                <input type="text" placeholder="Latitude" id="latField" name="latitude" required>
+              </div>
+
+              <div class="input-field col s4">
+                <input type="text" placeholder="Longitude" id="lngField" name="longitude" required>
+              </div>
+
+             </div>
+             <div class="row">
+              <div class="input-field col s12">
+                <input type="file"  id="imgField" name="locIMG" accept="image/*" required>
+              </div>
+             </div>
+    
+             <div class="row">
+              <div class="input-field col s12">
+                <input type="submit" id="submitBTN"  class="col s12 waves-effect waves-light btn-large" value="Add location">
+              </div>
+             </div>
+           </form>
+         </div>
+        
+
         </div>
-        <div class="modal-footer">
-          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-        </div>
-      </div>
+    </div>
     
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
