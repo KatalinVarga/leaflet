@@ -35,10 +35,12 @@ map.on('click', clickedMap);
 
 function clickedMap(event){
 
-    instance.open();
+   
 
     latField.value = event.latlng.lat;
     lngField.value = event.latlng.lng;
+
+    instance.open();
     
     // console.log(event);
     
