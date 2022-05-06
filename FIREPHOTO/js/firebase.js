@@ -5,7 +5,7 @@ firebase.initializeApp({
     storageBucket: "firephoto-b5909.appspot.com",
     messagingSenderId: "9194437529",
     appId: "1:9194437529:web:674c316365eb873197b108",
-    measurementId: "G-LNK8S2KSDD"
+    
 });
 
 var db = firebase.firestore();
